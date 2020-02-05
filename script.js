@@ -3,10 +3,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const links = document.querySelector('ul');
     
   icon.addEventListener("click", () => {
-    if (links.className === "off") {
-      links.className = "on";
+    if (links.className === "mobile-hidden") {
+      links.className = "mobile-shown";
     } else {
-      links.className = "off";
+      links.className = "mobile-hidden";
     }
   });
 });
