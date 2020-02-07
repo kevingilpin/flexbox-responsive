@@ -10,8 +10,6 @@
     display: flex;
     flex-flow: column;
     background-color: #4CAF50;
-    position: absolute;
-    top: 0;
     width: 100vw;
   }
   header .header-top {
@@ -45,7 +43,6 @@
     text-decoration: none;
   }
   section {
-    margin-top: 60px;
     color: grey;
   }
   

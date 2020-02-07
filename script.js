@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  const icon = document.querySelector('.icon');
-  const links = document.querySelector('ul');
+  const icon = document.querySelector('header .icon');
+  const nav = document.querySelector('nav ul.mobile-hidden');
     
   icon.addEventListener("click", () => {
-    if (links.className === "mobile-hidden") {
-      links.className = "mobile-shown";
+    if (nav.className.includes("mobile-hidden")) {
+      nav.className = nav.className.replace("mobile-hidden", "mobile-shown");
     } else {
-      links.className = "mobile-hidden";
+      nav.className = nav.className.replace("mobile-shown", "mobile-hidden");
     }
   });
 });
